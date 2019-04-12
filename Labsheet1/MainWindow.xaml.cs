@@ -24,5 +24,44 @@ namespace Labsheet1
         {
             InitializeComponent();
         }
+
+        private void TxtBtn_Click(object sender, RoutedEventArgs e)
+        {
+            //read user input
+            string numEnt = txtBox.Text;
+
+            //check for valid input - a number
+            int num;
+            bool isNum = int.TryParse(numEnt, out num);
+
+            if (isNum)
+            {
+                //convert to number
+                int number = Convert.ToInt32(num);
+
+                //check if odd or even
+                if (number % 2 == 0)
+
+                //display message
+                {
+                    txtBlk.Text = "Number is even";
+                    txtBlk.Foreground = new SolidColorBrush(Colors.Green);
+                }
+
+                else
+
+                    txtBlk.Text = "Number is odd";
+                txtBlk.Foreground = new SolidColorBrush(Colors.Red);
+
+               
+            }
+            else
+                txtBlk.Text = "Invalid entry";
+
+
+
+
+
+        }
     }
 }

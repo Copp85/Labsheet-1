@@ -1,0 +1,16 @@
+﻿<Window x:Class="Ex_8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ex_8"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <RadioButton x:Name="EvenBtn" Content="Next number will be even" HorizontalAlignment="Left" Margin="96,244,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="oddBtn" Content="Next number will be Odd" HorizontalAlignment="Left" Margin="263,244,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="guessNum" HorizontalAlignment="Left" Height="22" Margin="119,296,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Guess" Content="Guess" HorizontalAlignment="Left" Margin="96,276,0,0" VerticalAlignment="Top" Width="75" Click="Guess_Click"/>
+
+    </Grid>
+</Window>
